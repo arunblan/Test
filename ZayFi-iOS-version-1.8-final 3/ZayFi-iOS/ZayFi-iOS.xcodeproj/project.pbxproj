@@ -1,0 +1,640 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		09524E206A5AF7D43AEB4778 /* Pods_ZayFi_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F311CEF4F060767E9C027C97 /* Pods_ZayFi_iOS.framework */; };
+		709BDD352833A72600E12E3C /* ZFGetOTPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709BDD342833A72600E12E3C /* ZFGetOTPViewController.swift */; };
+		709BDD3A2833AD5400E12E3C /* ZFVerifyOTPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709BDD392833AD5400E12E3C /* ZFVerifyOTPViewController.swift */; };
+		709BDD412834038F00E12E3C /* ZFAutoLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 709BDD402834038F00E12E3C /* ZFAutoLoginViewController.swift */; };
+		B315C19D277A14890049FC91 /* ZFGeneralModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = B315C19C277A14890049FC91 /* ZFGeneralModels.swift */; };
+		B31F118027730F7400D5B76A /* ZFWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31F117F27730F7400D5B76A /* ZFWebViewController.swift */; };
+		B33882F22718385800052B17 /* ZFUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33882F12718385800052B17 /* ZFUser.swift */; };
+		B33882F42718474600052B17 /* ZFFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33882F32718474600052B17 /* ZFFirstViewController.swift */; };
+		B33882F62718479600052B17 /* ZayFiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33882F52718479600052B17 /* ZayFiManager.swift */; };
+		B37B96CA2771F562009026EC /* ZFSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37B96C92771F562009026EC /* ZFSettingsViewController.swift */; };
+		B37B96CC2771F57F009026EC /* ZFEditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37B96CB2771F57F009026EC /* ZFEditProfileViewController.swift */; };
+		B37B9F082771CB3C001FA242 /* ZFForgotPassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37B9F072771CB3C001FA242 /* ZFForgotPassViewController.swift */; };
+		B384C217271434F60020D612 /* ZFRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B384C215271434F60020D612 /* ZFRegisterViewController.swift */; };
+		B390C7C427941592008297EA /* BEAdvertisementAPIRequester.swift in Sources */ = {isa = PBXBuildFile; fileRef = B390C7C327941592008297EA /* BEAdvertisementAPIRequester.swift */; };
+		B390C7C627943158008297EA /* ZFCampaign.swift in Sources */ = {isa = PBXBuildFile; fileRef = B390C7C527943158008297EA /* ZFCampaign.swift */; };
+		B3998BD02709AD4900C8AB45 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3998BCF2709AD4900C8AB45 /* AppDelegate.swift */; };
+		B3998BD72709AD4900C8AB45 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3998BD52709AD4900C8AB45 /* Main.storyboard */; };
+		B3998BD92709AD4A00C8AB45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3998BD82709AD4A00C8AB45 /* Assets.xcassets */; };
+		B3998BDC2709AD4A00C8AB45 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3998BDA2709AD4A00C8AB45 /* LaunchScreen.storyboard */; };
+		B3998BE82709B09300C8AB45 /* ZFAPIRequester.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3998BE72709B09300C8AB45 /* ZFAPIRequester.swift */; };
+		B3998BEA2709B0B700C8AB45 /* ZFSessionAPIRequester.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3998BE92709B0B700C8AB45 /* ZFSessionAPIRequester.swift */; };
+		B3998BF32709B0E000C8AB45 /* ZFLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3998BEB2709B0DF00C8AB45 /* ZFLogger.swift */; };
+		B3998BF42709B0E000C8AB45 /* ZFExtras.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3998BEC2709B0DF00C8AB45 /* ZFExtras.swift */; };
+		B3998BF52709B0E000C8AB45 /* ZFDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3998BED2709B0DF00C8AB45 /* ZFDefault.swift */; };
+		B3998BF62709B0E000C8AB45 /* ZFConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3998BEE2709B0DF00C8AB45 /* ZFConstants.swift */; };
+		B3998BF72709B0E000C8AB45 /* ZFErrorCodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3998BEF2709B0DF00C8AB45 /* ZFErrorCodes.swift */; };
+		B3998BF82709B0E000C8AB45 /* ZFSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3998BF02709B0DF00C8AB45 /* ZFSerializer.swift */; };
+		B3998BF92709B0E000C8AB45 /* ZFExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3998BF12709B0E000C8AB45 /* ZFExtentions.swift */; };
+		B3998BFA2709B0E000C8AB45 /* ZFURLManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3998BF22709B0E000C8AB45 /* ZFURLManager.swift */; };
+		B3998BFC2709B2F500C8AB45 /* ZFSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3998BFB2709B2F500C8AB45 /* ZFSession.swift */; };
+		B3DA226227BD212F00D8DFCA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B3DA226127BD212E00D8DFCA /* GoogleService-Info.plist */; };
+		B3DE92DD2782EB43004FBA04 /* ZFDebugViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DE92DC2782EB43004FBA04 /* ZFDebugViewController.swift */; };
+		B3DE92E02782EFAE004FBA04 /* ZFDebugCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DE92DF2782EFAE004FBA04 /* ZFDebugCell.swift */; };
+		B3E4198D271569F60042FAD7 /* ZFLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E4198C271569F60042FAD7 /* ZFLoginViewController.swift */; };
+		B3E4198F27156A350042FAD7 /* ZFHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E4198E27156A350042FAD7 /* ZFHomeViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		52A58040428DBDD40CBD1FD6 /* Pods-ZayFi-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZayFi-iOS.release.xcconfig"; path = "Target Support Files/Pods-ZayFi-iOS/Pods-ZayFi-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		709BDD342833A72600E12E3C /* ZFGetOTPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZFGetOTPViewController.swift; sourceTree = "<group>"; };
+		709BDD392833AD5400E12E3C /* ZFVerifyOTPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZFVerifyOTPViewController.swift; sourceTree = "<group>"; };
+		709BDD402834038F00E12E3C /* ZFAutoLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZFAutoLoginViewController.swift; sourceTree = "<group>"; };
+		96E398846FB280B1D7FCFF27 /* Pods-ZayFi-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZayFi-iOS.debug.xcconfig"; path = "Target Support Files/Pods-ZayFi-iOS/Pods-ZayFi-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		B315C19C277A14890049FC91 /* ZFGeneralModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZFGeneralModels.swift; sourceTree = "<group>"; };
+		B31F117F27730F7400D5B76A /* ZFWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZFWebViewController.swift; sourceTree = "<group>"; };
+		B33882F12718385800052B17 /* ZFUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZFUser.swift; sourceTree = "<group>"; };
+		B33882F32718474600052B17 /* ZFFirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZFFirstViewController.swift; sourceTree = "<group>"; };
+		B33882F52718479600052B17 /* ZayFiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZayFiManager.swift; sourceTree = "<group>"; };
+		B37B96C92771F562009026EC /* ZFSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZFSettingsViewController.swift; sourceTree = "<group>"; };
+		B37B96CB2771F57F009026EC /* ZFEditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZFEditProfileViewController.swift; sourceTree = "<group>"; };
+		B37B9F072771CB3C001FA242 /* ZFForgotPassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZFForgotPassViewController.swift; sourceTree = "<group>"; };
+		B384C152277CCAA200F5E206 /* ZayFi-iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "ZayFi-iOS.entitlements"; sourceTree = "<group>"; };
+		B384C215271434F60020D612 /* ZFRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZFRegisterViewController.swift; sourceTree = "<group>"; };
+		B390C7C327941592008297EA /* BEAdvertisementAPIRequester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BEAdvertisementAPIRequester.swift; sourceTree = "<group>"; };
+		B390C7C527943158008297EA /* ZFCampaign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZFCampaign.swift; sourceTree = "<group>"; };
+		B3998BCC2709AD4900C8AB45 /* ZayFi-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ZayFi-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3998BCF2709AD4900C8AB45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B3998BD62709AD4900C8AB45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B3998BD82709AD4A00C8AB45 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B3998BDB2709AD4A00C8AB45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B3998BDD2709AD4A00C8AB45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3998BE72709B09300C8AB45 /* ZFAPIRequester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZFAPIRequester.swift; sourceTree = "<group>"; };
+		B3998BE92709B0B700C8AB45 /* ZFSessionAPIRequester.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZFSessionAPIRequester.swift; sourceTree = "<group>"; };
+		B3998BEB2709B0DF00C8AB45 /* ZFLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZFLogger.swift; sourceTree = "<group>"; };
+		B3998BEC2709B0DF00C8AB45 /* ZFExtras.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZFExtras.swift; sourceTree = "<group>"; };
+		B3998BED2709B0DF00C8AB45 /* ZFDefault.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZFDefault.swift; sourceTree = "<group>"; };
+		B3998BEE2709B0DF00C8AB45 /* ZFConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZFConstants.swift; sourceTree = "<group>"; };
+		B3998BEF2709B0DF00C8AB45 /* ZFErrorCodes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZFErrorCodes.swift; sourceTree = "<group>"; };
+		B3998BF02709B0DF00C8AB45 /* ZFSerializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZFSerializer.swift; sourceTree = "<group>"; };
+		B3998BF12709B0E000C8AB45 /* ZFExtentions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZFExtentions.swift; sourceTree = "<group>"; };
+		B3998BF22709B0E000C8AB45 /* ZFURLManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZFURLManager.swift; sourceTree = "<group>"; };
+		B3998BFB2709B2F500C8AB45 /* ZFSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZFSession.swift; sourceTree = "<group>"; };
+		B3DA226127BD212E00D8DFCA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B3DE92DC2782EB43004FBA04 /* ZFDebugViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZFDebugViewController.swift; sourceTree = "<group>"; };
+		B3DE92DF2782EFAE004FBA04 /* ZFDebugCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZFDebugCell.swift; sourceTree = "<group>"; };
+		B3E4198C271569F60042FAD7 /* ZFLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZFLoginViewController.swift; sourceTree = "<group>"; };
+		B3E4198E27156A350042FAD7 /* ZFHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZFHomeViewController.swift; sourceTree = "<group>"; };
+		F311CEF4F060767E9C027C97 /* Pods_ZayFi_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZayFi_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B3998BC92709AD4900C8AB45 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09524E206A5AF7D43AEB4778 /* Pods_ZayFi_iOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		709BDD362833AA3700E12E3C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				70A0BD2F2834B5D300803ABF /* Auth */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		70A0BD2F2834B5D300803ABF /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				709BDD342833A72600E12E3C /* ZFGetOTPViewController.swift */,
+				709BDD392833AD5400E12E3C /* ZFVerifyOTPViewController.swift */,
+				709BDD402834038F00E12E3C /* ZFAutoLoginViewController.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		B3998BC32709AD4900C8AB45 = {
+			isa = PBXGroup;
+			children = (
+				B3998BCE2709AD4900C8AB45 /* ZayFi-iOS */,
+				B3998BCD2709AD4900C8AB45 /* Products */,
+				C2BAB2FCD23264206C76DB56 /* Pods */,
+				F6CDB224BAD97C0AAA1831BF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B3998BCD2709AD4900C8AB45 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B3998BCC2709AD4900C8AB45 /* ZayFi-iOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B3998BCE2709AD4900C8AB45 /* ZayFi-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				B384C152277CCAA200F5E206 /* ZayFi-iOS.entitlements */,
+				B3998BE42709B03300C8AB45 /* ZayFi */,
+				B3998BCF2709AD4900C8AB45 /* AppDelegate.swift */,
+				B3998BD52709AD4900C8AB45 /* Main.storyboard */,
+				B3998BD82709AD4A00C8AB45 /* Assets.xcassets */,
+				B3998BDA2709AD4A00C8AB45 /* LaunchScreen.storyboard */,
+				B3998BDD2709AD4A00C8AB45 /* Info.plist */,
+				B3DA226127BD212E00D8DFCA /* GoogleService-Info.plist */,
+			);
+			path = "ZayFi-iOS";
+			sourceTree = "<group>";
+		};
+		B3998BE32709B00800C8AB45 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B33882F12718385800052B17 /* ZFUser.swift */,
+				B3998BFB2709B2F500C8AB45 /* ZFSession.swift */,
+				B390C7C527943158008297EA /* ZFCampaign.swift */,
+				B315C19C277A14890049FC91 /* ZFGeneralModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B3998BE42709B03300C8AB45 /* ZayFi */ = {
+			isa = PBXGroup;
+			children = (
+				709BDD362833AA3700E12E3C /* ViewControllers */,
+				B3DE92DE2782EF7F004FBA04 /* Debugger */,
+				B33882F52718479600052B17 /* ZayFiManager.swift */,
+				B33882F32718474600052B17 /* ZFFirstViewController.swift */,
+				B3E4198C271569F60042FAD7 /* ZFLoginViewController.swift */,
+				B37B9F072771CB3C001FA242 /* ZFForgotPassViewController.swift */,
+				B384C215271434F60020D612 /* ZFRegisterViewController.swift */,
+				B3E4198E27156A350042FAD7 /* ZFHomeViewController.swift */,
+				B37B96C92771F562009026EC /* ZFSettingsViewController.swift */,
+				B37B96CB2771F57F009026EC /* ZFEditProfileViewController.swift */,
+				B31F117F27730F7400D5B76A /* ZFWebViewController.swift */,
+				B3998BE62709B06C00C8AB45 /* NetworkManager */,
+				B3998BE52709B05800C8AB45 /* SupportFiles */,
+				B3998BE32709B00800C8AB45 /* Models */,
+				B3E247642779C11E0098F87C /* Resources */,
+			);
+			path = ZayFi;
+			sourceTree = "<group>";
+		};
+		B3998BE52709B05800C8AB45 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				B3998BEE2709B0DF00C8AB45 /* ZFConstants.swift */,
+				B3998BED2709B0DF00C8AB45 /* ZFDefault.swift */,
+				B3998BEF2709B0DF00C8AB45 /* ZFErrorCodes.swift */,
+				B3998BF12709B0E000C8AB45 /* ZFExtentions.swift */,
+				B3998BEC2709B0DF00C8AB45 /* ZFExtras.swift */,
+				B3998BEB2709B0DF00C8AB45 /* ZFLogger.swift */,
+				B3998BF02709B0DF00C8AB45 /* ZFSerializer.swift */,
+				B3998BF22709B0E000C8AB45 /* ZFURLManager.swift */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		B3998BE62709B06C00C8AB45 /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				B3998BE72709B09300C8AB45 /* ZFAPIRequester.swift */,
+				B3998BE92709B0B700C8AB45 /* ZFSessionAPIRequester.swift */,
+				B390C7C327941592008297EA /* BEAdvertisementAPIRequester.swift */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		B3DE92DE2782EF7F004FBA04 /* Debugger */ = {
+			isa = PBXGroup;
+			children = (
+				B3DE92DC2782EB43004FBA04 /* ZFDebugViewController.swift */,
+				B3DE92DF2782EFAE004FBA04 /* ZFDebugCell.swift */,
+			);
+			path = Debugger;
+			sourceTree = "<group>";
+		};
+		B3E247642779C11E0098F87C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B3E247652779C12F0098F87C /* LogonScript */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B3E247652779C12F0098F87C /* LogonScript */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LogonScript;
+			sourceTree = "<group>";
+		};
+		C2BAB2FCD23264206C76DB56 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				96E398846FB280B1D7FCFF27 /* Pods-ZayFi-iOS.debug.xcconfig */,
+				52A58040428DBDD40CBD1FD6 /* Pods-ZayFi-iOS.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F6CDB224BAD97C0AAA1831BF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F311CEF4F060767E9C027C97 /* Pods_ZayFi_iOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B3998BCB2709AD4900C8AB45 /* ZayFi-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3998BE02709AD4A00C8AB45 /* Build configuration list for PBXNativeTarget "ZayFi-iOS" */;
+			buildPhases = (
+				F154CF10B742A90183BC4B85 /* [CP] Check Pods Manifest.lock */,
+				B3998BC82709AD4900C8AB45 /* Sources */,
+				B3998BC92709AD4900C8AB45 /* Frameworks */,
+				B3998BCA2709AD4900C8AB45 /* Resources */,
+				F314A7665F56F77C89775359 /* [CP] Embed Pods Frameworks */,
+				B3DA226327BD251600D8DFCA /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ZayFi-iOS";
+			productName = "ZayFi-iOS";
+			productReference = B3998BCC2709AD4900C8AB45 /* ZayFi-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B3998BC42709AD4900C8AB45 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					B3998BCB2709AD4900C8AB45 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+				};
+			};
+			buildConfigurationList = B3998BC72709AD4900C8AB45 /* Build configuration list for PBXProject "ZayFi-iOS" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B3998BC32709AD4900C8AB45;
+			productRefGroup = B3998BCD2709AD4900C8AB45 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B3998BCB2709AD4900C8AB45 /* ZayFi-iOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B3998BCA2709AD4900C8AB45 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3998BDC2709AD4A00C8AB45 /* LaunchScreen.storyboard in Resources */,
+				B3DA226227BD212F00D8DFCA /* GoogleService-Info.plist in Resources */,
+				B3998BD92709AD4A00C8AB45 /* Assets.xcassets in Resources */,
+				B3998BD72709AD4900C8AB45 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B3DA226327BD251600D8DFCA /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${TARGET_NAME}",
+				"$(SRCROOT)/$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/FirebaseCrashlytics/run\"\n";
+		};
+		F154CF10B742A90183BC4B85 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZayFi-iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F314A7665F56F77C89775359 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZayFi-iOS/Pods-ZayFi-iOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZayFi-iOS/Pods-ZayFi-iOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZayFi-iOS/Pods-ZayFi-iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B3998BC82709AD4900C8AB45 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3998BF62709B0E000C8AB45 /* ZFConstants.swift in Sources */,
+				709BDD352833A72600E12E3C /* ZFGetOTPViewController.swift in Sources */,
+				B3998BE82709B09300C8AB45 /* ZFAPIRequester.swift in Sources */,
+				B3998BF82709B0E000C8AB45 /* ZFSerializer.swift in Sources */,
+				B33882F62718479600052B17 /* ZayFiManager.swift in Sources */,
+				B3998BF32709B0E000C8AB45 /* ZFLogger.swift in Sources */,
+				B3E4198D271569F60042FAD7 /* ZFLoginViewController.swift in Sources */,
+				B3998BF92709B0E000C8AB45 /* ZFExtentions.swift in Sources */,
+				709BDD3A2833AD5400E12E3C /* ZFVerifyOTPViewController.swift in Sources */,
+				B33882F22718385800052B17 /* ZFUser.swift in Sources */,
+				709BDD412834038F00E12E3C /* ZFAutoLoginViewController.swift in Sources */,
+				B384C217271434F60020D612 /* ZFRegisterViewController.swift in Sources */,
+				B3998BF72709B0E000C8AB45 /* ZFErrorCodes.swift in Sources */,
+				B37B9F082771CB3C001FA242 /* ZFForgotPassViewController.swift in Sources */,
+				B31F118027730F7400D5B76A /* ZFWebViewController.swift in Sources */,
+				B3DE92DD2782EB43004FBA04 /* ZFDebugViewController.swift in Sources */,
+				B33882F42718474600052B17 /* ZFFirstViewController.swift in Sources */,
+				B3998BF42709B0E000C8AB45 /* ZFExtras.swift in Sources */,
+				B37B96CC2771F57F009026EC /* ZFEditProfileViewController.swift in Sources */,
+				B3998BF52709B0E000C8AB45 /* ZFDefault.swift in Sources */,
+				B3E4198F27156A350042FAD7 /* ZFHomeViewController.swift in Sources */,
+				B315C19D277A14890049FC91 /* ZFGeneralModels.swift in Sources */,
+				B3998BFC2709B2F500C8AB45 /* ZFSession.swift in Sources */,
+				B390C7C427941592008297EA /* BEAdvertisementAPIRequester.swift in Sources */,
+				B3998BD02709AD4900C8AB45 /* AppDelegate.swift in Sources */,
+				B3DE92E02782EFAE004FBA04 /* ZFDebugCell.swift in Sources */,
+				B390C7C627943158008297EA /* ZFCampaign.swift in Sources */,
+				B37B96CA2771F562009026EC /* ZFSettingsViewController.swift in Sources */,
+				B3998BFA2709B0E000C8AB45 /* ZFURLManager.swift in Sources */,
+				B3998BEA2709B0B700C8AB45 /* ZFSessionAPIRequester.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B3998BD52709AD4900C8AB45 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B3998BD62709AD4900C8AB45 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B3998BDA2709AD4A00C8AB45 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B3998BDB2709AD4A00C8AB45 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B3998BDE2709AD4A00C8AB45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B3998BDF2709AD4A00C8AB45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B3998BE12709AD4A00C8AB45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96E398846FB280B1D7FCFF27 /* Pods-ZayFi-iOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "ZayFi-iOS/ZayFi-iOS.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 32;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 8Z7JUAV776;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_ARCHS = "";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				INFOPLIST_FILE = "ZayFi-iOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.8;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zaytech.zayfi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		B3998BE22709AD4A00C8AB45 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52A58040428DBDD40CBD1FD6 /* Pods-ZayFi-iOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "ZayFi-iOS/ZayFi-iOS.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 32;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_BITCODE = NO;
+				EXCLUDED_ARCHS = "";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				INFOPLIST_FILE = "ZayFi-iOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.8;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zaytech.zayfi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B3998BC72709AD4900C8AB45 /* Build configuration list for PBXProject "ZayFi-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3998BDE2709AD4A00C8AB45 /* Debug */,
+				B3998BDF2709AD4A00C8AB45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B3998BE02709AD4A00C8AB45 /* Build configuration list for PBXNativeTarget "ZayFi-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3998BE12709AD4A00C8AB45 /* Debug */,
+				B3998BE22709AD4A00C8AB45 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B3998BC42709AD4900C8AB45 /* Project object */;
+}

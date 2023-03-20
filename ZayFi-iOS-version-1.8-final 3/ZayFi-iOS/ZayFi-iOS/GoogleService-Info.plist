@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>993572099057-dbtrk703pdvqd1ll3uu3b7mp9l7ck5r2.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.993572099057-dbtrk703pdvqd1ll3uu3b7mp9l7ck5r2</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCZ-quCqCctxjIfVd1kSpMMbaXGTvIrEbI</string>
+	<key>GCM_SENDER_ID</key>
+	<string>993572099057</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.zaytech.zayfi</string>
+	<key>PROJECT_ID</key>
+	<string>wifitest123-4dc49</string>
+	<key>STORAGE_BUCKET</key>
+	<string>wifitest123-4dc49.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:993572099057:ios:9a02c03206e8f81694aa50</string>
+</dict>
+</plist>
